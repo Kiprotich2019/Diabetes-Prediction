@@ -15,5 +15,7 @@ COPY predict.py .
 COPY dv.pkl .
 COPY xgb_model.pkl .
 
+EXPOSE 9696
+
 # Specify the command to run the script
 CMD ["python", "predict.py"]
