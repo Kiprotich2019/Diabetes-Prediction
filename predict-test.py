@@ -12,7 +12,7 @@ patient = {
 }
 
 
-url = 'http://localhost:9696/predict'
+url = 'http://13.61.3.131:9696/predict'
 
 response = requests.post(url, json=patient)
 result = response.json()
