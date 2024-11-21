@@ -66,31 +66,31 @@ The repository includes the following:
 ## Installation and Usage  
 
 ### Step 1: Clone the Repository  
-\`\`\`bash
+```bash
 git clone <repository-url>
 cd Diabetes-Prediction
-\`\`\`  
+```  
 
 ### Step 2: Install Dependencies  
 Install required packages:  
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`  
+```  
 
 Alternatively, use **conda** or **Pipenv** if preferred.  
 
 ### Step 3: Run Data Preparation and Model Training  
 - Open **`notebook.ipynb`** for exploratory data analysis (EDA), feature engineering, and model training.  
 - Or train the model directly using:  
-  \`\`\`bash
+  ```bash
   python train.py
-  \`\`\`  
+  ```  
 
 ### Step 4: Start the Prediction Service  
 To start a Flask or BentoML prediction service:  
-\`\`\`bash
+```bash
 python predict.py
-\`\`\`  
+```  
 
 This will launch a web server to accept prediction requests.  
 
@@ -99,7 +99,7 @@ This will launch a web server to accept prediction requests.
 ## Usage Example  
 
 Send a POST request with relevant health data in JSON format, such as:  
-\`\`\`json
+```json
 {
  "gender": "female",
  "age": 30.0,
@@ -110,7 +110,7 @@ Send a POST request with relevant health data in JSON format, such as:
  "HbA1c_level": 6.6,
  "blood_glucose_level": 150
 }
-\`\`\`  
+```  
 The service will respond with a diabetes prediction.  
 
 ---
@@ -118,12 +118,12 @@ The service will respond with a diabetes prediction.
 ## Deployment  
 The project includes a **Dockerfile** for containerization. To deploy:  
 1. Build the Docker container:  
-   \`\`\`bash
+   ```bash
    docker build -t diabetes-prediction .
-   \`\`\`  
+   ```  
 2. Run the container:  
-   \`\`\`bash
+   ```bash
    docker run -p 9696:9696 diabetes-prediction
-   \`\`\`  
+   ```  
 
 This will start the service on `http://localhost:9696`.  
