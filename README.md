@@ -67,7 +67,7 @@ The repository includes the following:
 
 ### Step 1: Clone the Repository  
 ```bash
-git clone <repository-url>
+git clone https://github.com/Kiprotich2019/Diabetes-Prediction.git
 cd Diabetes-Prediction
 ```  
 
@@ -127,3 +127,8 @@ The project includes a **Dockerfile** for containerization. To deploy:
    ```  
 
 This will start the service on `http://localhost:9696`.  
+
+---
+
+## Contributions  
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
